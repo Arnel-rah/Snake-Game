@@ -1,6 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include "snake.h"
+#include "food.h"
 #include <SFML/Graphics.hpp>
 
 class Game {
@@ -14,6 +16,8 @@ private:
     void render();
 
     sf::RenderWindow window;
+    Snake snake;
+    Food food;
 };
 
 #endif
