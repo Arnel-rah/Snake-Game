@@ -1,6 +1,6 @@
 #include "game.h"
 
-Game::Game() : window(sf::VideoMode(800, 600), "Snake Game") {
+Game::Game() : window(sf::VideoMode(800, 600), "Snake Game"), snake(), food() {
     window.setFramerateLimit(60);
 }
 
@@ -22,10 +22,16 @@ void Game::processEvents() {
 }
 
 void Game::update() {
-    // Placeholder for game logic updates
+    snake.update();
+    if (snake.checkCollision(food.getPosition())) {
+        snake.grow();
+        food.respawn();
+    }
 }
 
 void Game::render() {
     window.clear();
+    snake.render(window);
+    food.render(window);
     window.display();
 }
