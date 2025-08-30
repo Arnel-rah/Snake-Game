@@ -1,0 +1,3 @@
+D:/Arnel Web/projetC++/snake-game/build/CMakeFiles/SnakeGame.dir
+D:/Arnel Web/projetC++/snake-game/build/CMakeFiles/ALL_BUILD.dir
+D:/Arnel Web/projetC++/snake-game/build/CMakeFiles/ZERO_CHECK.dir

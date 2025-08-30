@@ -4,7 +4,10 @@ project(SnakeGame)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+
+set(SFML_DIR "C:/SFML/SFML-2.6.2/lib/cmake/SFML")
+
+find_package(SFML 2.6.2 COMPONENTS graphics window system REQUIRED)
 
 add_executable(SnakeGame
     src/main.cpp
@@ -13,4 +16,4 @@ add_executable(SnakeGame
     src/food.cpp
 )
 
-target_link_libraries(SnakeGame sf::graphics sf::window sf::system)
+target_link_libraries(SnakeGame PRIVATE sfml-graphics sfml-window sfml-system)
