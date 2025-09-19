@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# welcome.py — Une petite démo "attirante" en terminal
-# Fonctionne sous macOS / Linux / Windows (PowerShell & Windows Terminal supportent les échappements ANSI)
 
 import sys
 import time
